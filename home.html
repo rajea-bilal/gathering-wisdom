@@ -18,159 +18,115 @@
   
         <div class="nav-center">
 
-      
             <div class="nav-header">
-                <img src="./images/gathering-wisdom-logo.png" class="nav-logo"alt="logo"> 
+                <a href="./home.html"><img src="./images/gathering-wisdom-logo.png" class="nav-logo"alt="logo"> </a>
                 <button class="nav-btn" id="nav-btn">
                 <i class="fas fa-bars"></i>
                 </button>
             </div> 
   
             <ul class="nav-links"> 
-               <li>
-                   <a href="#head">home</a>
-               </li>
-
-               <li>
-                   <a href="#about">about</a>
-               </li>
-
-               <li>
-                   <a href="./shop.html">shop</a>
-               </li>
+               <li><a href="#head">home</a></li>
+               <li><a href="#about">about</a></li>
+               <li><a href="./shop.html">shop</a></li>
            </ul> 
-           
         </div>
+      
     </nav> 
+           
                 
+    <!-- sidebar -->
+    <!-- <aside class="sidebar" id="sidebar">
+
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button> -->
+      
+
+          <!--- nav links -->
+              <!-- <ul class="sidebar-links">
+                      <li>
+                          <a href="#head" id="close-sidebar">Home</a>
+                      </li>
+                      <li>
+                          <a href="#about" id="close-sidebar">about</a>
+                      </li>
+                      <li>
+                          <a href="#project" id="close-sidebar">projects</a>
+                      </li>
+                      <li>
+                          <a href="mailto:rajea.bilal@gmail.com" id="close-sidebar">contact</a>
+                      </li>
+              </ul> -->
+  
+          <!--- social links -->
+                  <!-- <ul class="sidebar-social">
+                  <li>
+                          <a href="https://twitter.com/rajeabilal" target="_blank">
+                          <i class="fab fa-twitter"></i>
+                          </a>
+                  </li>
+                  <li>
+                          <a href="https://github.com/rajea-bilal" target="_blank">
+                          <i class="fab fa-github"></i>
+                          </a>
+                  </li>
+                  <li>
+                          <a href="https://www.linkedin.com/in/rajea-bilal/" target="_blank">
+                          <i class="fab fa-linkedin"></i>
+                          </a>
+                  </li>
+                  </ul>
+      </div> -->
+
+    <!-- </aside> -->
+    <!-- end of sidebar -->
   
 
-  
-  
-  
-  
-      <!-- sidebar -->
-      <!-- <aside class="sidebar" id="sidebar">
+    <!-- header -->
+    <header class="hero" id="head">
+          <div class="section-center hero-center">
 
-        <div>
-          <button class="close-btn" id="close-btn">
-            <i class="fas fa-times"></i>
-          </button> -->
-        
-  
-            <!--- nav links -->
-                <!-- <ul class="sidebar-links">
-                        <li>
-                            <a href="#head" id="close-sidebar">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about" id="close-sidebar">about</a>
-                        </li>
-                        <li>
-                            <a href="#project" id="close-sidebar">projects</a>
-                        </li>
-                        <li>
-                            <a href="mailto:rajea.bilal@gmail.com" id="close-sidebar">contact</a>
-                        </li>
-                </ul> -->
-    
-            <!--- social links -->
-                    <!-- <ul class="sidebar-social">
-                    <li>
-                            <a href="https://twitter.com/rajeabilal" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                            </a>
-                    </li>
-                    <li>
-                            <a href="https://github.com/rajea-bilal" target="_blank">
-                            <i class="fab fa-github"></i>
-                            </a>
-                    </li>
-                    <li>
-                            <a href="https://www.linkedin.com/in/rajea-bilal/" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                            </a>
-                    </li>
-                    </ul>
-        </div> -->
-
-      </aside>
-      <!-- end of sidebar -->
-  
-  
-          
-  
-  
-      <!-- header -->
-      <header class="hero" id="head">
-            <div class="section-center hero-center">
-  
-                <article class="hero-info">
-                    <h1>Gathering <br> Wisdom</h1>
-                    <p class="hero-text">Search books by title or author </p>
-                        <form class=inputBox>
-                            <input type="text" name="bookName" value="" class="searchField">
-                            <button type="button" name="search-btn" class='search-btn'>Search</button>
-                        </form>
-                  
-                    <!--- social links -->
-                            <!-- <ul class="social-links hero-links">
-                            <li>
-                                <a href="https://twitter.com/rajeabilal" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="https://github.com/rajea-bilal" target="_blank">
-                                <i class="fab fa-github"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="https://www.linkedin.com/in/rajea-bilal/" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                                </a>
-                            </li>
-
-                            </ul> -->
-            
+              <article class="hero-info">
+                  <h1>Gathering <br> Wisdom</h1>
+                  <p class="hero-text">Search books by title or author </p>
+                      <form class="search-form">
+                          <input type="text" name="bookName" value="" class="searchField" placeholder="title/author" id="input-box">
+                          <!-- <button type="button" name="search-btn" class='search-btn'>Search</button> -->
+                      </form>
                 </article>
-                      
+
                 <div class="hero-img">
                     <img src="images/reading-man5.png" class="hero-photo circular-landscape">
                 </div>
-                
-        </div>
-
-    </header>
-      <!-- end of header -->
-  
-         
-  
-  
-  
-     <!-- projects -->
-    <section class="section books" id="project">
-
-        <!--- section title -->
-            <div class="section-title books-title">
-                <h2 class="bookSectionTitle">Your Books</h2>
-                <p class="bookSectionText">Here are some of the books that you chose.</p>
+          
             </div>
-        <!--- end of section title -->
-    
-        <!--- projects center -->
-        <div class="section-center books-center" id="books-space">
-        </div>
+    </header>
+    <!-- end of header -->
+                    
+              
 
-    </section>
     
-                        
-        <!-- end of about -->
+       <!-- projects -->
+      <section class="section books" id="project">
+  
+          <!--- section title -->
+              <div class="section-title books-title">
+                  <h2 class="bookSectionTitle">Books</h2>
+                  <p class="bookSectionText"></p>
+              </div>
+          <!--- end of section title -->
+      
+          <!--- projects center -->
+          <div class="section-center books-center" id="books-space">
+             
+          </div>
+  
+      </section>
 
         <!-- footer -->
-        <footer class="footer" id="footer">
+    <footer class="footer" id="footer">
         <!--- social links -->
         <ul class="social-links">
             <li class="social-icon">
@@ -178,7 +134,6 @@
                 <i class="fab fa-twitter"></i>
                 </a>
             </li>
-
             <li class="social-icon">
                 <a href="https://github.com/rajea-bilal" target="_blank">
                 <i class="fab fa-github"></i>
@@ -189,18 +144,33 @@
                 <i class="fab fa-linkedin"></i>
                 </a>
             </li>
-    
         </ul>
-        <p>&copy; <span id="date"></span>Developed with &#9829 by Rajea.</p>
 
-        </footer>
-        
-        <script type="module" src="./Logic/app.js"></script>
-    </body>
-    </html>
+    <p>&copy; <span id="date"></span>Developed with &#9829 by Rajea.</p>
+    </footer>
     
+    
+        <script type="module" src="./app.js"></script>
     </body>
-    </html>
+</html>
+        
+    
+ 
+  
+  
+  
+  
+  
+  
+          
+  
+
+  
+         
+  
+  
+    
+                        
              
                     
 

@@ -171,7 +171,7 @@ Navbar
 .nav { 
   background: rgb(108, 132, 95);
   /* background: #7CA494; */
-  height: 6rem;
+  height: 5.5rem;
   padding: 1rem;
   display: grid;
   align-items: center;
@@ -188,10 +188,11 @@ Navbar
   max-width: 1170px;
   margin: 0 auto;
 }
+
 .nav-header {
   display: grid;
   grid-template-columns: auto 1fr;
-  align-items: center;
+  /* align-items: center; */
   /* justify-items: center; */
 }
 .nav-btn {
@@ -207,11 +208,11 @@ Navbar
 }
 @media screen and (min-width: 768px) {
   .nav {
-    height: 6.9rem;
+    height: 6.2rem;
   }
 
   .nav-logo {
-    width: 90px;
+    width: 85px;
    
   }
   .nav-btn {
@@ -239,7 +240,9 @@ Navbar
   .nav-center {
     display: grid;
     grid-template-columns: auto 1fr;
+    
     align-items: center;
+    /* border: 1px solid red; */
   }
 }
 
@@ -329,7 +332,7 @@ Hero
 }
 
 .hero-center {
-  min-height: calc(80vh - 5rem);
+  min-height: calc(50vh - 5rem);
   /* display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr; */
@@ -340,8 +343,7 @@ Hero
 }
 .hero-img {
   display: none;
-  /* border: 1px solid red; */
-  max-width: 20rem;
+  max-width: 15rem;
   
 }
 .hero-text {
@@ -553,7 +555,7 @@ Services
 
 /*
 =============== 
-Projects
+Books
 ===============
 */
 .books {
@@ -573,7 +575,8 @@ Projects
 
 .bookSectionTitle {
   color: rgb(28, 61, 60);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+
 }
 
 .bookSectionText { 
@@ -581,9 +584,9 @@ Projects
 }
 
 .book-img {
-  /* border: 1px solid red; */
-  max-width: 7rem;
-  margin: 1rem auto;
+   max-width: 8rem;
+  max-height: 11rem; 
+  margin: 0rem auto 1rem auto; 
 }
 
 .books-box {
@@ -591,19 +594,25 @@ Projects
   max-width: 15rem;
   margin-bottom: 5em;
   margin-right: 2rem;
-  background: #1b4b67;
-  background: rgb(66, 103, 104);
+  /* background: #1b4b67; */
+  background:rgb(86, 134, 136);
   border-radius: 0.5em;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
-  padding: 0.4rem;
-  /* border: 1px solid yellow; */
+  box-shadow: 5px 10px 10px rgba(98, 92, 92, 0.2);
+  padding: 1.5rem 0rem 1rem 0rem;
+  transition: all 0.3s linear;
+  
 }
 
-
+.books-box:hover {
+  background: rgb(58, 91, 92);
+  transform: translate(-1px, 2.8px);
+  /* transform:scale(1.1) */
+}
 .bookTitle {
   color: #c6a866;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  /* margin-bottom: 0rem; */
+  text-align: center;
 } 
   
 .bookDesc {
@@ -625,7 +634,7 @@ Projects
 }
 .books-box p {
   color:antiquewhite;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   line-height: 1.6;
   max-width: 25rem;
 }
@@ -652,7 +661,7 @@ Projects
   height: 15rem;
   object-fit: contain;
   border-radius: 0.5rem;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 .project:hover .project-img {
   opacity: 0.5;
