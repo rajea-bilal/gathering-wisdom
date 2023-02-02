@@ -611,7 +611,8 @@ Books
 .bookTitle {
   color: #c6a866;
   font-size: 1.5rem;
-  /* margin-bottom: 0rem; */
+  max-width: 11rem;
+  margin: 0rem auto 0rem auto;
   text-align: center;
 } 
   

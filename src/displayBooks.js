@@ -4,6 +4,7 @@ const displayBooks = ({ items: books}) => {
     const title = document.querySelector('.bookSectionTitle')
     const infoTitle = document.querySelector('.bookSectionText')
   
+    console.log(section, title, infoTitle)
 
     // if the drinks array is null then show the error message
     if(!books) {
@@ -15,7 +16,7 @@ const displayBooks = ({ items: books}) => {
 
     // iterate over each object in the array and dispay it in the section
     const newBooks = books.map((book) => {
-        // console.log(book)
+        console.log(book)
         const { id } = book
         const { title: bookTitle, authors, description: desc } = book.volumeInfo
         const { thumbnail: img } = book.volumeInfo.imageLinks
@@ -29,15 +30,15 @@ const displayBooks = ({ items: books}) => {
             </article>
             </a>
              <!-- single book -->`
-               
+             
+    }).join('')
+    // hide loading
+    title.innerHTML = 'Your selection of books'
+    section.innerHTML = newBooks
+    return section
+}
              
         
        
-    }).join('')
-    // hide loading
-   title.innerHTML = 'Your selection of books'
-   section.innerHTML = newBooks
-   return section
-}
  
 export { displayBooks }
