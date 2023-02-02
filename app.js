@@ -16,10 +16,10 @@ const input = document.querySelector('#input-box')
 input.addEventListener('keyup', () => {
 
     const userValue = input.value
-    const removeWhiteSpace = userValue.split(' ')
+    const removeWhiteSpace = userValue.split(' ').join('')
     console.log(removeWhiteSpace)
     const apiKey = 'AIzaSyDY9bFJdLhkjZkhw2iS83bDjMU3MkCs8CU'
-    const url = `https://www.googleapis.com/books/v1/volumes?q=${removeWhiteSpace}&maxResults=10&key=${apiKey}`
+    const url = `https://www.googleapis.com/books/v1/volumes?q=${removeWhiteSpace}&maxResults=10`
     // console.log(url)
     presentBooks(url)
 
