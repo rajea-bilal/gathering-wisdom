@@ -4,12 +4,12 @@ import { displayBooks } from './displayBooks.js'
 // main function responsible for fetching and displaying the drinks
 const showBooks = async (url) => {
     try {
-        // fetch drinks
+        // fetch books
         console.log(url)
         const data = await fetchBooks(url)
         // console.log(data)
 
-        // display drinks
+        // display books
         const section =  displayBooks(data)
         console.log(section)
     }
