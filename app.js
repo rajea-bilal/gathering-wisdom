@@ -22,8 +22,12 @@ input.addEventListener('keyup', () => {
     // console.log(url)
     presentBooks(url)
 
-   
 })
+   
+// filtered search link that will fetch books only by james clear. This is what I want to be able to do with the input value from the user. 
+// 'https://www.googleapis.com/books/v1/volumes?q=inauthor:"james+clear"&maxResults=10
+
+
 
 
 
