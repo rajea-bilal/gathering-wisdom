@@ -19,26 +19,36 @@ const displayBooks = ({ items: books}) => {
         console.log(book)
         const { id } = book
         const { title: bookTitle, authors, description: desc } = book.volumeInfo
-        const { thumbnail: img } = book.volumeInfo.imageLinks
-        console.log( `id: ${id}, bookTitle: ${bookTitle}, authors: ${authors}, description: ${desc}desc, image:${img}` )
+        const img = book.volumeInfo.imageLinks?.thumbnail
+        if(!img) {
+            return
+        } else {
+            const singleBook = `<!-- single book -->
+                <a href="book.html?id=${ id }">
+                    <article class="books-box">
+                        <img src=${ img } alt=${ bookTitle } class="book-img">
+                        <h3 class="bookTitle">${ bookTitle }</h3>
+                    </article>
+                </a>
+                    <!-- single book -->`
 
-        return `<!-- single book -->
-        <a href="book.html?id=${ id }">
-            <article class="books-box">
-                <img src=${ img } alt=${ bookTitle } class="book-img">
-                <h3 class="bookTitle">${ bookTitle }</h3>
-            </article>
-            </a>
-             <!-- single book -->`
-             
+        // returning a book with dynamically plugged in values from the API
+            return singleBook
+        }
+        // console.log( `id: ${id}, bookTitle: ${bookTitle}, authors: ${authors}, description: ${desc}desc, image:${img}` )
     }).join('')
     // hide loading
     title.innerHTML = 'Your selection of books'
     section.innerHTML = newBooks
+
+    // returning dynamically constructed section from the displayBooks function
     return section
 }
+
+export { displayBooks }
+        
+             
              
         
        
  
-export { displayBooks }

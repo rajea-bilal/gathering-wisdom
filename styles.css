@@ -332,7 +332,7 @@ Hero
 }
 
 .hero-center {
-  min-height: calc(50vh - 5rem);
+  min-height: calc(80vh - 5rem);
   /* display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr; */
@@ -343,7 +343,7 @@ Hero
 }
 .hero-img {
   display: none;
-  max-width: 15rem;
+  max-width: 17rem;
   
 }
 .hero-text {
